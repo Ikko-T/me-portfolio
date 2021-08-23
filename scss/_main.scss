@@ -1,0 +1,64 @@
+.wrapper {
+  width: 100%;
+  max-width: 810px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.87rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+
+  .logo {
+    z-index: 999;
+    mix-blend-mode: multiply;
+    position: fixed;
+    top: 7.81rem;
+    left: 15%;
+  }
+
+  .button {
+    position: fixed;
+    top: 1.75rem;
+    left: 1.25rem;
+    font-family: $font-type;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+
+    i {
+      padding-left: 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .container {
+    .workContainer {
+      padding-left: 9.37rem;
+    }
+
+    .group {
+      text-align: right;
+      padding-top: 0.93rem;
+      margin-bottom: 1.25rem;
+
+      h2 {
+        margin-bottom: 0.31rem;
+      }
+    }
+
+    .fadeIn {
+      transition: 1s;
+      opacity: 0;
+    }
+
+    .fadeIn.animated {
+      opacity: 1;
+    }
+
+    .work {
+      margin-bottom: 1.25rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
