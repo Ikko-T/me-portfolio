@@ -1,0 +1,58 @@
+@media (max-width: 800px) {
+  // ------------------------------------
+  // about
+  // ------------------------------------
+  .about {
+    display: block;
+    margin-top: 3.75rem;
+    padding-top: 1.25rem;
+
+    .about-inner {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0;
+
+      .item {
+        dd {
+          padding-left: 3rem;
+        }
+      }
+
+      .profileImg {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  // ------------------------------------
+  // header
+  // ------------------------------------
+  .wrapper {
+    margin-top: 1.25rem;
+
+    .logo {
+      position: static;
+      margin-bottom: 1.25rem;
+    }
+    .button {
+      display: none;
+    }
+
+    // ------------------------------------
+    // main
+    // ------------------------------------
+    .container {
+      .workContainer {
+        padding-left: 0;
+      }
+    }
+  }
+
+  // ------------------------------------
+  // navigation
+  // ------------------------------------
+  ul {
+    display: none;
+  }
+}
