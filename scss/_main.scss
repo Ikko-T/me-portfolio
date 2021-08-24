@@ -60,5 +60,39 @@
         width: 100%;
       }
     }
+
+    .open-btn {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 15px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .open-btn span {
+      display: inline-block;
+      transition: all 0.4s;
+      position: absolute;
+      left: 14px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: #707070;
+      width: 50%;
+    }
+
+    .open-btn span:nth-of-type(1) {
+      top: 15px;
+    }
+
+    .open-btn span:nth-of-type(2) {
+      top: 23px;
+    }
+
+    .open-btn span:nth-of-type(3) {
+      top: 31px;
+    }
   }
 }
