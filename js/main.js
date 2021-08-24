@@ -5,7 +5,6 @@ $(function () {
   const logo = document.querySelector('.logo');
   const button = document.querySelector('.button');
   const aboutPage = document.querySelector('.about');
-
   let display = false;
 
   $('.button').on('click', () => {
@@ -31,9 +30,7 @@ $(function () {
       }
     });
   });
-});
 
-$(function () {
   $(window).scroll(function () {
     $('.fadeIn').each(function () {
       var targetElement = $(this).offset().top;
@@ -45,15 +42,24 @@ $(function () {
       }
     });
   });
-});
 
-$(function () {
   const scrollTop = document.querySelector('#page-top');
-
   scrollTop.addEventListener('click', () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
+  });
+
+  $('.open-btn').click(function () {
+    $('.open-btn').toggleClass('active');
+    $('.nav').toggleClass('active');
+  });
+
+  $('#nav-link a[href*="#"]').click(function () {
+    const elmHash = $(this).attr('href');
+    const position = $(elmHash).offset().top;
+    $('body, html').animate({ scrollTop: position }, 500);
+    return false;
   });
 });
