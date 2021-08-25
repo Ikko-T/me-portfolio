@@ -17,7 +17,7 @@
 
       dt {
         font-family: $font-type;
-        font-size: $large;
+        font-size: 0.81rem;
         letter-spacing: 0.1rem;
         line-height: 1.2rem;
       }
@@ -29,7 +29,7 @@
       }
     }
 
-    .profileImg {
+    .profile-image {
       margin-left: 50px;
       width: clamp(60%, 22vw, 85%);
       img {
