@@ -40,7 +40,10 @@
       margin-bottom: 1.25rem;
 
       h2 {
+        display: inline-block;
+        border-top: 1px solid #000;
         margin-bottom: 0.31rem;
+        padding-top: 0.62rem;
       }
     }
 
@@ -55,6 +58,7 @@
 
     .work {
       margin-bottom: 1.25rem;
+      border: solid 0.06rem #f0f4f4;
 
       img {
         width: 100%;
